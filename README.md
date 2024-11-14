@@ -1,0 +1,1 @@
+# M-dia-aritm-tica
