@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Media Aritimetica </title>
+        <input id="nota 1" type="number"><br/>
+        <input id="nota 1" type="number"><br/>
+        <button onclick="media ()"> Calcular media </button>
+        
+        <script type = "text/javascript">
 
+        function media (){
+        ver nota 1 = passefloat(document.getElementByID("nota 1").value);
+        ver nota 2 = passefloat(document.getElementByID("nota 2").value);
+
+        var media = (nota 1 + nota 2)/2;
+
+        if(media >= 7)
+        if(media ==10)
+            ALERT("UAU! Aprovado com distinção")
+        else
+            ALERT("Paranens, aprovado!Media "+media");
+        else
+            ALERT("Reprovado!")
+        }
+        </script>
+
+
+    <h2>Calculadora de Média Aritmética</h2>
+    <form id="mediaForm">
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" required><br><br>
+
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" required><br><br>
+
+        <label for="numero3">Número 3:</label>
+        <input type="number" id="numero3" required><br><br>
+
+        <button type="button" onclick="calcularMedia()">Calcular Média</button>
+    </form>
+
+    <h3 id="resultado"></h3>
+
+    <script>
+        function calcularMedia() {
+            const numero1 = parseFloat(document.getElementById("numero1").value);
+            const numero2 = parseFloat(document.getElementById("numero2").value);
+            const numero3 = parseFloat(document.getElementById("numero3").value);
+
+            const media = (numero1 + numero2 + numero3) / 3;
+
+            document.getElementById("resultado").innerText = `A média é: ${media.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>
+
+</head>
+</html>
